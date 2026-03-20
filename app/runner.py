@@ -6,7 +6,6 @@ class SimpleRunner:
     async def run_async(self, user_id, session_id, new_message):
         try:
             full_prompt = build_prompt(new_message)
-
             loop = asyncio.get_running_loop()
             response = await loop.run_in_executor(
                 None, lambda: model.generate_content(full_prompt)
