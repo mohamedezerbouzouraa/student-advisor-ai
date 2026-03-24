@@ -10,7 +10,6 @@ class SimpleRunner:
             response = await loop.run_in_executor(
                 None, lambda: model.generate_content(full_prompt)
             )
-
             class Event:
                 def __init__(self, text):
                     self._text = text
