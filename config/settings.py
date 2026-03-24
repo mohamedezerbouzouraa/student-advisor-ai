@@ -1,7 +1,8 @@
 import os
 import google.generativeai as genai
 
-os.environ["GOOGLE_API_KEY"] = "PUT_YOUR_API_KEY_HERE"
+os.environ["GOOGLE_API_KEY"] = "xxxxxxxxxxxxxxxx"
+
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 APP_NAME = "adk_course_app"
