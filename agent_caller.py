@@ -1,7 +1,6 @@
 import asyncio
 from runner_setup import runner, USER_ID, SESSION_ID
 
-
 async def call_agent_async(query: str):
     final_response_text = "No response."
     async for event in runner.run_async(
