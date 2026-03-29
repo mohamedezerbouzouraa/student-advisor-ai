@@ -8,8 +8,7 @@ class SimpleRunner:
             full_prompt = build_prompt(new_message)
             loop = asyncio.get_running_loop()
             response = await loop.run_in_executor(
-                None, lambda: model.generate_content(full_prompt)
-            )
+                None, lambda: model.generate_content(full_prompt))
             class Event:
                 def __init__(self, text):
                     self._text = text
