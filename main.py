@@ -2,6 +2,7 @@ import asyncio
 import sys
 from interactive import interactive_mode
 
+
 if __name__ == "__main__":
     if "ipykernel" in sys.modules:
         loop = asyncio.get_running_loop()
