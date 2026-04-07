@@ -15,7 +15,6 @@ class SimpleRunner:
 
                 def is_final_response(self):
                     return True
-
                 @property
                 def content(self):
                     class Content:
