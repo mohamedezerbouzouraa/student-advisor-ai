@@ -1,6 +1,7 @@
 import asyncio
 from app.utils import welcome_message
 from agent_caller import call_agent_async
+
 async def interactive_mode():
     welcome_message()
     while True:
