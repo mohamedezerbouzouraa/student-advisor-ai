@@ -11,4 +11,5 @@ async def call_agent_async(query: str):
             if event.content and event.content.parts:
                 final_response_text = event.content.parts[0].text
             break
+            
     print(f"\n🎓 Advisor: {final_response_text}")
