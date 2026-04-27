@@ -9,4 +9,5 @@ async def interactive_mode():
         if user_input.lower() == "exit":
             print("👋 Goodbye!")
             break
+            
         await call_agent_async(user_input)
