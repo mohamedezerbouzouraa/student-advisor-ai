@@ -3,7 +3,6 @@ from google.api_core.exceptions import ResourceExhausted
 from app.agent import model, build_prompt
 
 class SimpleRunner:
-    
     async def run_async(self, user_id, session_id, new_message):
         try:
             full_prompt = build_prompt(new_message)
