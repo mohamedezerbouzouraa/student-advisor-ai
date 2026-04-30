@@ -10,5 +10,6 @@ if __name__ == "__main__":
             loop.run_until_complete(task)
         except asyncio.CancelledError:
             pass
+
 else:
         asyncio.run(interactive_mode())
