@@ -11,7 +11,6 @@ class SimpleRunner:
             class Event:
                 def __init__(self, text):
                     self._text = text
-
                 def is_final_response(self):
                     return True
                 @property
