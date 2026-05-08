@@ -7,6 +7,6 @@ async def interactive_mode():
     while True:
         user_input = input("🧑 Your question: ")
         if user_input.lower() == "exit":
-            print("👋 Goodbye!")
+            print(" Goodbye!")
             break
         await call_agent_async(user_input)
