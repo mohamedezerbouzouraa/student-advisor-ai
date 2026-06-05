@@ -25,6 +25,5 @@ class SimpleRunner:
 
         except ResourceExhausted:
             yield Event("⚠️ Quota exceeded. Try again later.")
-
         except Exception as e:
             yield Event(f"❌ Error: {str(e)}")
